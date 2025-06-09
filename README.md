@@ -8,8 +8,7 @@ Turtle (included with standard Python installations)
 1. Clone or Download Repository
 Clone the repository or download the Python script:
 
-git clone [repository_url]
-cd [repository_directory]
+git clone https://github.com/bharathgandoor/soccer.py.git
 
 # 2. Run the Game
 
