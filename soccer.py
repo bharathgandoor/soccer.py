@@ -1,0 +1,52 @@
+import random
+import turtle
+ManchesterUnitedFan=turtle.Turtle()
+ManchesterUnitedFan.hideturtle()
+ManchesterUnitedFan.pensize(10)
+ManchesterUnitedFan.penup()
+ManchesterUnitedFan.goto(-100,50)
+ManchesterUnitedFan.pendown()
+ManchesterUnitedFan.color("red")
+ManchesterUnitedFan.speed('fastest')
+ManchesterUnitedFan.fillcolor("green")
+ManchesterUnitedFan.begin_fill()
+for n in range(2):
+  ManchesterUnitedFan.forward(250)
+  ManchesterUnitedFan.right(90)
+  ManchesterUnitedFan.forward(150)
+  ManchesterUnitedFan.right(90)
+ManchesterUnitedFan.end_fill() 
+ManchesterUnitedFan.pensize(3)
+ManchesterUnitedFan.penup()
+ManchesterUnitedFan.goto(-100,-10)
+ManchesterUnitedFan.setheading(0)
+ManchesterUnitedFan.color("white")
+ManchesterUnitedFan.pendown()
+ManchesterUnitedFan.forward(10)
+ManchesterUnitedFan.right(90)
+ManchesterUnitedFan.forward(30)
+ManchesterUnitedFan.right(90)
+ManchesterUnitedFan.forward(10)
+ManchesterUnitedFan.color('white')
+ManchesterUnitedFan.penup()
+ManchesterUnitedFan.right(180)
+ManchesterUnitedFan.forward(225)
+ManchesterUnitedFan.left(90)
+ManchesterUnitedFan.forward(15)
+ManchesterUnitedFan.shape("circle")
+ManchesterUnitedFan.showturtle()
+ManchesterUnitedFan.speed(1)
+while True:
+  kick=input("would you like to kick the ball? (spelling matters here; yes, or no): ")
+  if kick=='yes':
+    y=random.randint(-100,0)
+    ManchesterUnitedFan.goto(-100,y)
+    if y<=-10 and y>=-40:
+      print("You Scored")
+      ManchesterUnitedFan.goto(125,-20)
+    else:
+      print("You Missed")
+      ManchesterUnitedFan.goto(125,-20)
+  else:
+    print("alright")
+    break                  
